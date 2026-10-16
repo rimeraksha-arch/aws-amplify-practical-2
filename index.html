@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AWS Amplify Hosting practical demonstration" />
+  <title>AWS Amplify | Cloud Hosting Practical</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root { color-scheme: dark; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Arial, sans-serif; color: #f4f7ff; background: #080f21; }
+    .glow { position: fixed; width: 480px; height: 480px; background: #2153c1; filter: blur(140px); opacity: .19; border-radius: 50%; top: -200px; right: -170px; pointer-events: none; }
+    header { max-width: 1060px; margin: auto; padding: 28px 26px; display: flex; justify-content: space-between; align-items: center; }
+    .brand { font-size: 1.15rem; font-weight: 800; letter-spacing: -.025em; }
+    .brand span { color: #f5b54b; }
+    .pill { padding: 9px 14px; border: 1px solid #365273; border-radius: 99px; background: #132440; font-size: .78rem; color: #bed5ef; }
+    main { max-width: 1060px; margin: auto; padding: 55px 26px 80px; }
+    .eyebrow { color: #7ae1c7; font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .15em; }
+    h1 { margin: 15px 0 20px; line-height: 1.08; font-size: clamp(2.4rem, 6vw, 5rem); letter-spacing: -.055em; max-width: 790px; }
+    h1 em { font-style: normal; color: #81d1f1; }
+    .lead { max-width: 680px; font-size: 1.13rem; line-height: 1.75; color: #b5c4da; }
+    .success { display: inline-flex; align-items: center; gap: 12px; margin: 30px 0 50px; border: 1px solid #327f72; border-radius: 12px; padding: 15px 20px; background: #0f2d31; color: #9ef4c3; font-weight: 700; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: #6cf9ad; box-shadow: 0 0 0 5px #2a544f; }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .card { border: 1px solid #283954; background: linear-gradient(165deg, #182940, #101b2f); border-radius: 17px; padding: 24px; min-height: 196px; }
+    .card .ic { font-size: 1.9rem; }
+    .card h2 { font-size: 1.1rem; margin: 16px 0 10px; }
+    .card p { margin: 0; color: #b0c0d5; line-height: 1.6; font-size: .94rem; }
+    .footer { margin-top: 66px; padding-top: 24px; border-top: 1px solid #293953; color: #9babc4; font-size: .9rem; }
+    @media (max-width: 720px) { header { padding: 22px; } main { padding: 40px 22px 65px; } .cards { grid-template-columns: 1fr; } .pill { font-size: .67rem; } }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+  <header><div class="brand">☁ <span>AWS</span> Cloud Lab</div><div class="pill">Electronics & Telecommunication</div></header>
+  <main>
+    <div class="eyebrow">Cloud Computing Practical</div>
+    <h1>My first website<br />deployed with <em>AWS Amplify.</em></h1>
+    <p class="lead">This website is hosted using Amazon Web Services (AWS) Amplify Hosting and deployed from a GitHub repository. It demonstrates cloud-based web application hosting and continuous deployment.</p>
+    <div class="success"><span class="dot"></span> Deployment successful — website is live!</div>
+    <section class="cards">
+      <article class="card"><div class="ic">📁</div><h2>Step 1 · Source Code</h2><p>The HTML website and Amplify build configuration are uploaded to a GitHub repository.</p></article>
+      <article class="card"><div class="ic">🔗</div><h2>Step 2 · Connect</h2><p>GitHub is connected with AWS Amplify Hosting to enable automated deployments.</p></article>
+      <article class="card"><div class="ic">🚀</div><h2>Step 3 · Deploy</h2><p>AWS Amplify builds and hosts this page and provides a public HTTPS website URL.</p></article>
+    </section>
+    <div class="footer">AWS Amplify Hosting Practical Demonstration · Department of Electronics & Telecommunication Engineering</div>
+  </main>
+</body>
+</html>
